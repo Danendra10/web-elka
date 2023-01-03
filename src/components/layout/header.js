@@ -7,10 +7,12 @@ import { useRouter } from "next/router";
 // From defined utils
 import { HeaderMenu } from "@/utils/menus.js";
 
+
+
 export default function Header() {
   const router = useRouter();
   return (
-    <header className="absolute top-0 left-[78px] z-50 col-span-11 flex flex-wrap items-center justify-between border-slate-600 font-monsterrat text-sm">
+    <header className="absolute top-0 right-[160px] z-50 col-span-11 flex flex-wrap items-center justify-between border-slate-600 bg-[#0B0D3C] font-monsterrat text-sm">
       <ul className="hidden lg:block">
         {HeaderMenu.map(function (item, index) {
           return (
